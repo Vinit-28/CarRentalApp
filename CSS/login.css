@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 95vh;
+    padding: 1rem;
+}
+
+.modalContainer{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 30%;
+    height: max-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.modalTitle{
+    margin: 1rem auto;
+}
+
+#form{
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.inputFields{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    border-bottom: 1px solid black;
+    margin: 1rem 2rem ;
+    background-color: white;
+    transition: all 200ms ease-in-out;
+    padding: 0rem 0.4rem;
+}
+
+.inputFields:focus{
+    font-size: 1.1rem;
+    border-bottom: 2px solid #dd71d7;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.buttonsContainer button{
+    font-size: 1.1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px 5px 2px #acadad;
+    transition: 250ms ease-in-out;
+}
+
+#login{
+    background-color: #4696ed;
+}
+
+#login:hover{
+    background-color: #2887ed;
+    box-shadow: 2px 4px 10px 3px #acadad;
+}
+
+#register{
+    background-color: #3ec03f;
+}
+
+#register:hover{
+    background-color: #2cb62d;
+    box-shadow: 2px 4px 10px 3px #acadad;
+}
+
+
+@media only screen and (max-width: 1300px){
+    
+     .modal{
+        width: 50%;
+    }
+    
+    .modalTitle{
+        font-size: 1.7rem;
+        margin: 1rem auto;
+    }
+
+    #form{
+    
+        width: 80%;
+        height: 70%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    
+    .modal{
+        width: 60%;
+    }
+    
+    .modalTitle{
+        font-size: 1.7rem;
+    }
+
+    #form{
+        width: 70%;
+        height: 70%;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+
+    .modal{
+        width: 65%;
+    }
+    
+    .modalTitle{
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    #form{
+        width: 80%;
+        height: 70%;
+        margin-top: 0.5rem;
+    }
+
+    .inputFields{
+        font-size: 0.8rem;
+        margin: 0.7rem;
+    }
+    
+    .inputFields:focus{
+        font-size: 0.9rem;
+    }
+    
+    
+    #fromDate{
+        font-size: 0.8rem;
+    }
+
+    .buttonsContainer{
+        margin-top: 0.3rem;
+    }
+    
+    .buttonsContainer button{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+    
+    .modal{
+        width: 85%;
+    }
+    
+    .modalTitle{
+        font-size: 0.8rem;
+    }
+
+    #form{
+        width: 80%;
+        height: 70%;
+        margin-top: 0.2rem;
+    }
+
+    .inputFields{
+        font-size: 0.7rem;
+    }
+    
+    .inputFields:focus{
+        font-size: 0.8rem;
+    }
+    
+    
+    #fromDate{
+        font-size: 0.7rem;
+    }
+
+    .buttonsContainer{
+        margin-top: 0.2rem;
+    }
+    
+    .buttonsContainer button{
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+}

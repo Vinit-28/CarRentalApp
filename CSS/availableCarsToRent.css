@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 95vh;
+    padding: 1rem;
+}
+
+
+.carsContainer{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    padding: 1rem;
+    align-items:flex-start;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px 3px #acadad;
+}
+
+.carsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.carsContainer {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+
+.bookCarCard{
+
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 5px 2px #acadad;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+
+.bookCarCard:hover{
+    box-shadow: 2px 4px 10px 3px #acadad;
+}
+
+
+.vehicleName{
+
+    color: #e76026;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.basicVehicleDetails{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+}
+
+.values{
+    color: #0c3f97;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.labels{
+    color: #051127;
+    font-size: 1.1rem;
+}
+
+
+.carButtonsContainer button{
+
+    margin: 1rem 1rem 0.5rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 1px 1px 4px 2px #acadad;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    transition: 250ms ease-in-out;
+}
+
+.bookNow{
+    background-color: #4696ed;
+}
+
+.bookNow:hover{
+    background-color: #2887ed;
+}
+
+
+.modalContainer{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+
+    width: 40%;
+    height: max-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.modalTitle{
+    margin: 1rem auto;
+}
+
+#form{
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.inputFields{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    border-bottom: 1px solid black;
+    margin: 0.7rem;
+    background-color: white;
+    transition: all 200ms ease-in-out;
+    padding: 0rem 0.4rem;
+}
+
+.inputFields:focus{
+    font-size: 1.1rem;
+    border-bottom: 2px solid black;
+}
+
+
+#fromDate{
+    font-size: 1rem;
+}
+
+
+.buttonsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.buttonsContainer button{
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 2px 4px 10px 3px #acadad;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#rentCar{
+    background-color: #4696ed;
+}
+
+#rentCar:hover{
+    background-color: #2887ed;
+}
+
+#closeButton{
+    background-color: #e54761;
+}
+
+#closeButton:hover{
+    background-color: #ed2546;
+}
+
+
+@media only screen and (max-width: 1600px){
+    
+    .labels, .values{
+        font-size: 0.9rem;
+    }
+
+    .menuButtons{
+        padding: 0.8rem;
+    }
+    
+    
+    .menuButtons button{
+    
+        padding: 0.5rem 0.8rem;
+        margin: 0.5rem 0.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 1300px){
+    
+    .labels, .values{
+        font-size: 0.7rem;
+    }
+
+    .menuButtons{
+        padding: 0.5rem;
+    }
+    
+    
+    .menuButtons button{
+        
+        font-size: 0.8rem;
+        padding: 0.5rem 0.5rem;
+        margin: 0.5rem 0.5rem;
+    }
+
+
+    .carButtonsContainer button{
+
+        margin: 0.7rem 0.7rem 0.5rem 0.5rem;
+        font-size: 0.7rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    /* MODAL CSS STARTS */
+     .modal{
+        width: 50%;
+    }
+    
+    .modalTitle{
+        font-size: 1.7rem;
+        margin: 1rem auto;
+    }
+
+    #form{
+    
+        width: 80%;
+        height: 70%;
+    }
+    /* MODAL CSS END */
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    
+    .greeting{
+        font-size: 1.7rem;
+    }
+
+    .menuButtons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .menuButtons button{
+        
+        padding: 0.5rem 0.5rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .carsContainer{
+
+        width: 60%;
+        padding: 1rem;
+    }
+
+    .bookCarCard{
+
+        width: 80%;
+        padding: 0.5rem;
+        margin: 0.8rem auto;
+    }
+
+    .vehicleName{
+
+        margin-bottom: 0.3rem;
+        font-size: 0.8rem;
+    }
+    
+    .basicVehicleDetails{
+        
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-row-gap: 1rem;
+        font-size: 1rem;
+    }
+
+    /* MODAL CSS STARTS */
+    .modal{
+        width: 60%;
+    }
+    
+    .modalTitle{
+        font-size: 1.7rem;
+    }
+
+    #form{
+        width: 70%;
+        height: 70%;
+    }
+    /* MODAL CSS END */
+    
+}
+
+
+
+
+@media only screen and (max-width: 700px){
+    
+    .greeting{
+        font-size: 1.5rem;
+    }
+
+    .carsContainer{
+
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .basicVehicleDetails{
+        
+        grid-row-gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .carButtonsContainer button{
+
+        margin: 0.7rem 0.7rem 0.5rem 0.5rem;
+        font-size: 0.7rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    /* MODAL CSS STARTS */
+    .modal{
+        width: 65%;
+    }
+    
+    .modalTitle{
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    #form{
+        width: 80%;
+        height: 70%;
+        margin-top: 0.5rem;
+    }
+
+    .inputFields{
+        font-size: 0.8rem;
+        margin: 0.7rem;
+    }
+    
+    .inputFields:focus{
+        font-size: 0.9rem;
+    }
+    
+    
+    #fromDate{
+        font-size: 0.8rem;
+    }
+
+    .buttonsContainer{
+        margin-top: 0.3rem;
+    }
+    
+    .buttonsContainer button{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    /* MODAL CSS END */
+}
+
+
+@media only screen and (max-width: 450px){
+    
+    .greeting{
+        font-size: 1.2rem;
+    }
+
+    .menuButtons{
+        grid-template-columns: auto auto;
+    }
+    
+    .menuButtons button{
+        font-size: 0.7rem;
+        padding: 0.5rem 0.5rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .carsContainer{
+
+        width: 85%;
+        padding: 0.5rem;
+    }
+
+    .basicVehicleDetails{
+        
+        grid-template-columns: 80px 80px;
+        grid-row-gap: 0.4rem;
+        font-size: 0.7rem;
+        margin: 0.3rem;
+    }
+
+    .carButtonsContainer button{
+
+        margin: 0.5rem 0.5rem 0.3rem 0.3rem;
+        font-size: 0.5rem;
+        padding: 0.4rem 0.7rem;
+    }
+
+    /* MODAL CSS STARTS */
+    .modal{
+        width: 85%;
+    }
+    
+    .modalTitle{
+        font-size: 0.8rem;
+    }
+
+    #form{
+        width: 80%;
+        height: 70%;
+        margin-top: 0.2rem;
+    }
+
+    .inputFields{
+        font-size: 0.7rem;
+    }
+    
+    .inputFields:focus{
+        font-size: 0.8rem;
+    }
+    
+    
+    #fromDate{
+        font-size: 0.7rem;
+    }
+
+    .buttonsContainer{
+        margin-top: 0.2rem;
+    }
+    
+    .buttonsContainer button{
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+    }
+    /* MODAL CSS END */
+}
+
+
+
+@media only screen and (max-width: 350px){
+    
+    .container{
+        justify-content: space-evenly;
+        padding: 0.5rem;
+    }
+
+    .greeting{
+        font-size: 0.8rem;
+    }
+    
+    .menuButtons button{
+        font-size: 0.5rem;
+        padding: 0.3rem 0.5rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    .carsContainer{
+
+        width: 85%;
+        padding: 0.5rem;
+    }
+
+    .basicVehicleDetails{
+        
+        grid-template-columns: 70px 70px;
+        grid-row-gap: 0.2rem;
+        font-size: 0.5rem;
+    }
+
+    .carButtonsContainer button{
+
+        margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+        font-size: 0.4rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
